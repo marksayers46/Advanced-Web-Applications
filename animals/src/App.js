@@ -11,7 +11,8 @@ export default function App() {
     <div className="App">
       <Header />
       <Switch>
-        {/* Build out a Private Route for both Animal Dashboard + Add Animal*/}
+        {/*add PrivateRoute to both AnimalDashboard and AddAnimal*/}
+        
         <Route exact path="/login" component={Login} />
       </Switch>
     </div>
