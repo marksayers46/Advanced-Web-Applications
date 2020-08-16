@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function Login(props) {
     const [login, setLogin] = useState({
@@ -12,6 +13,7 @@ export default function Login(props) {
             [e.target.name]: e.target.value
         })
     }
+    console.log(login)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,7 +29,7 @@ export default function Login(props) {
                   name="username"
                   label="username"
                   value={login.username}
-                  onchange={handleChange}
+                  onChange={handleChange}
                   className="input"
                 ></input>
                 <input
@@ -35,7 +37,7 @@ export default function Login(props) {
                   name="password"
                   label="password"
                   value={login.password}
-                  onchange={handleChange} 
+                  onChange={handleChange} 
                   className="input"
                 ></input>
                 <button>Login</button>
