@@ -13,10 +13,16 @@ export default function Login(props) {
             [e.target.name]: e.target.value
         })
     }
-    console.log(login)
+    //console.log(login)
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        axios
+        .post("http://localhost:5000/api/login", login)
+        .then(res => {
+            console.log(res);
+            window.localStorage.setItem("token", res.data.payload)
+        })
     }    
     
 
