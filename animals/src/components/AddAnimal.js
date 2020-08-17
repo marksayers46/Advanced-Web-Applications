@@ -22,6 +22,7 @@ const AddAnimal = (props) => {
         .post("animals", animal)
         .then(res => {console.log(res.data)})
         .catch(err => console.log(err))
+        props.history.push("/creatures")
     }
 
     return(
