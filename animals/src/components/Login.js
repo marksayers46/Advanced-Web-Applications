@@ -13,7 +13,7 @@ export default function Login(props) {
             [e.target.name]: e.target.value
         })
     }
-    //console.log(login)
+    console.log(login)
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import AnimalForm from "./AnimalForm.js";
 import AnimalList from "./AnimalsList.js";
-import {axiosAuth} from "./utils/axiosAuth";
+import { axiosAuth } from "./utils/axiosAuth";
 
 export default function AnimalDashboard() {
     
